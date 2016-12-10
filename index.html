@@ -4,7 +4,7 @@ link_path: 'index/index.css'
 title: 首页
 ---
 <ul>
-	{% for post in site.posts %}
+	{% for post in paginator.posts %}
     <li class="article">
     	<h3 class="title">
     		<a href="{{ post.url }}">{{ post.title }}</a>
@@ -17,3 +17,4 @@ title: 首页
 	{% endfor %}
 </ul>
 
+{% include paginate.html %}

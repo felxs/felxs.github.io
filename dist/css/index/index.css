@@ -46,6 +46,15 @@
   font-size: 14px;
   line-height: 26px;
 }
+.paginate-box {
+  font-size: 0;
+  text-align: center;
+}
+.paginate-box a {
+  font-size: 16px;
+  margin-right: 20px;
+  display: inline-block;
+}
 @media (max-width: 750px) {
   .article .title .date {
     float: none;
