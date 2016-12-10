@@ -23,6 +23,13 @@
 .article .title a {
   color: #333;
   font-size: 20px;
+  transition: color 1s;
+  -webkit-transition: color 1s;
+  -o-transition: color 1s;
+  -ms-transition: color 1s;
+}
+.article .title a:hover {
+  color: #1E9FFF;
 }
 .article .title .date {
   color: #999;

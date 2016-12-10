@@ -104,8 +104,11 @@ a{
 
 /**box**/
 .p-box{
-	margin-top: 30px;
+	&:first-child{
+		margin-top: 30px;
+	}
 	.title{
+		margin: 0;
 		color: #333;
 		height: 30px;
 		font-size: 16px;
@@ -116,7 +119,7 @@ a{
 			line-height: 30px;
 			margin-bottom: -1px;
 			display: inline-block;
-			border-bottom: 1px solid #ff6600;
+			border-bottom: 1px solid @linkColor;
 		}
 		.fa{
 			margin-right: 10px;
@@ -129,10 +132,13 @@ a{
 		line-height: 26px;
 	}
 	.list{
+		margin: 0;
+		padding: 0;
 		padding: 15px 0;
 		list-style: none;
 	}
 	.tag-list{
+		padding: 15px 10px;
 		li{
 			margin: 5px;
 			padding: 2px 8px;
@@ -146,7 +152,7 @@ a{
 
 /**article**/
 .p-article{
-	margin: 60px 0;
+	margin: 30px 0;
 	padding: 0 15px;
 	.title{
 		font-size: 26px;
@@ -162,8 +168,8 @@ a{
 		text-align: center;
 	}
 	.content{
+		margin-top: 50px;
 		line-height: 26px;
-		
 	}
 	ul{
 		padding: 0 15px;
@@ -200,9 +206,9 @@ a{
 			position: absolute;
 			background-color: #fff;
 			top: @headerHeight - 30;
-			.transition(height);
 		}
 		.p-nav.expland{
+			.transition(height,1s);
 			height: auto;
 		}
 		.p-toggle{
