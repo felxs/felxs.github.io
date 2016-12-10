@@ -16,5 +16,6 @@ title: 首页
     </li>
 	{% endfor %}
 </ul>
-
-{% include paginate.html %}
+{% if total_pages > 1%}
+    {% include paginate.html %}
+{% endif %}
