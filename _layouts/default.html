@@ -1,0 +1,16 @@
+{% include top.html %}
+
+<body class="wrap">
+{% include header.html %}
+	{% include banner.html %}
+	<div class="l-container p-main">
+  		<div class="p-left">
+  			{{ content }}
+  		</div>
+  		<div class="p-right">
+  			{% include right.html %}
+  		</div>
+	</div>
+</body>
+<script src="/dist/js/common/common.js"></script>
+</html>

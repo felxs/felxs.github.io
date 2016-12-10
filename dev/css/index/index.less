@@ -1,0 +1,50 @@
+/**article**/
+.p-left{
+	padding: 30px 0;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+}
+.article{
+	margin-bottom: 15px;
+	list-style-type: none;
+	border-bottom: 1px solid #ddd;
+	&:last-child{
+		border: none;
+		margin-bottom: 0;
+	}
+	.title{
+		margin: 0;
+		padding: 0 15px;
+		line-height: 36px;
+		a{
+			color: #333;
+			font-size: 20px;
+		}
+		.date{
+			color: #999;
+			float: right;
+			display: block;
+			margin-top: 9px;
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: normal;
+		}
+	}
+	.content{
+		color: #999;
+		padding: 15px;
+		line-height: 26px;
+	}
+}
+
+
+@media (max-width: 750px) {
+	.article{
+		.title .date{
+			float: none;
+			display: block;
+		}
+	}
+}

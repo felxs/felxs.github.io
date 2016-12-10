@@ -1,0 +1,28 @@
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# WebStorm
+.idea/**/*
+.idea/**
+todo.md
+
+output/**
+/.idea
+/.idea
+.idea
+
+node_modules
+node_modules/
+
+
+_site
+_site/
+_site/**/*
+_site/**

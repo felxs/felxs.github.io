@@ -1,0 +1,46 @@
+/**article**/
+.p-left {
+  padding: 30px 0;
+}
+.p-left ul {
+  margin: 0;
+  padding: 0;
+}
+.article {
+  margin-bottom: 15px;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+.article:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+.article .title {
+  margin: 0;
+  padding: 0 15px;
+  line-height: 36px;
+}
+.article .title a {
+  color: #333;
+  font-size: 20px;
+}
+.article .title .date {
+  color: #999;
+  float: right;
+  display: block;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+}
+.article .content {
+  color: #999;
+  padding: 15px;
+  line-height: 26px;
+}
+@media (max-width: 750px) {
+  .article .title .date {
+    float: none;
+    display: block;
+  }
+}

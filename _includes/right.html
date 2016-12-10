@@ -1,0 +1,30 @@
+<div class="p-box">
+	<h3 class="title">
+		<span>文章分类</span>
+	</h3>
+	<ul class="list">
+	    {% for category in site.categories %}
+	    <li>
+	    	<a class="item" href="/categories/{{ category | first }}/">
+	    		<i class="fa fa-book"></i>
+	    		{{ category | first }} {{ category | last | size }}
+	    	</a>
+	    </li>
+	    {% endfor %}
+	</ul>
+</div>
+
+<div class="p-box">
+	<h3 class="title">
+		<span><i class="fa fa-bookmark-o"></i> 热门标签</span>
+	</h3>
+	<ul class="list tag-list">
+	    {% for tag in site.tags %}
+	    <li>
+	    	<a href="/categories/{{ category | first }}/">
+	    		{{ tag | first }}
+	    	</a>
+	    </li>
+	    {% endfor %}
+	</ul>
+</div>
