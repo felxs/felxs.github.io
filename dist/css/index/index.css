@@ -29,13 +29,14 @@
   float: right;
   display: block;
   margin-top: 9px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   font-weight: normal;
 }
 .article .content {
   color: #999;
   padding: 15px;
+  font-size: 14px;
   line-height: 26px;
 }
 @media (max-width: 750px) {
